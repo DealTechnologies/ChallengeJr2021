@@ -15,12 +15,10 @@ namespace viacep
 
             var cep = Console.ReadLine();
 
-            var response = await GetJsonFromContent<Postal>("https://viacep.com.br/", $"ws/{cep}/json");
-
-            Console.WriteLine(JsonConvert.SerializeObject(response));
+            await GetJsonFromContent("https://viacep.com.br/", $"ws/{cep}/json");
         }
 
-        static async Task<T> GetJsonFromContent<T>(string baseUri, string uri)
+        static async Task GetJsonFromContent(string baseUri, string uri)
         {
             var client = new HttpClient { BaseAddress = new Uri(baseUri) };
 
@@ -32,27 +30,13 @@ namespace viacep
             {
                 try
                 {
-                    return JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync());
+                    Console.WriteLine(await response.Content.ReadAsStringAsync());
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.ToString());
                 }
             }
-
-            return default;
         }
-    }
-
-    internal class Postal
-    {
-        [JsonPropertyName("logradouro")]
-        public string Logradouro { get; set; }
-
-        [JsonPropertyName("bairro")] 
-        public string Bairro { get; set; }
-
-        [JsonPropertyName("uf")] 
-        public string Uf { get; set; }
     }
 }
