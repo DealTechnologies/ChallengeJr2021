@@ -5,4 +5,4 @@
   - ✅ palindrome
   - ✅ reverse
   - ✅ vogais
-  - ❌ api rest
+  - ✅ api rest
