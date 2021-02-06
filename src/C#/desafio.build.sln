@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fibonacci", "fibonacci\fibonacci.csproj", "{848AD079-28D3-4430-97D7-1081D11A28E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fibonacci", "fibonacci\fibonacci.csproj", "{848AD079-28D3-4430-97D7-1081D11A28E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fatorial", "fatorial\fatorial.csproj", "{79F42D7C-F37A-4F32-B72C-D47C68968601}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fatorial", "fatorial\fatorial.csproj", "{79F42D7C-F37A-4F32-B72C-D47C68968601}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reverse", "reverse\reverse.csproj", "{C76DB071-BE44-4190-8A68-9D618DCEDC57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reverse", "reverse\reverse.csproj", "{C76DB071-BE44-4190-8A68-9D618DCEDC57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palindrome", "palindrome\palindrome.csproj", "{FFC96F43-AC26-4AC7-80DD-9F21D62106FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "palindrome", "palindrome\palindrome.csproj", "{FFC96F43-AC26-4AC7-80DD-9F21D62106FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vogais", "vogais\vogais.csproj", "{B55A8634-8836-43B4-B016-8AC548031340}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vogais", "vogais\vogais.csproj", "{B55A8634-8836-43B4-B016-8AC548031340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "viacep", "viacep\viacep.csproj", "{C90BB9E1-F0BE-4272-B0B1-599845A1FCB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B55A8634-8836-43B4-B016-8AC548031340}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B55A8634-8836-43B4-B016-8AC548031340}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B55A8634-8836-43B4-B016-8AC548031340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90BB9E1-F0BE-4272-B0B1-599845A1FCB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90BB9E1-F0BE-4272-B0B1-599845A1FCB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90BB9E1-F0BE-4272-B0B1-599845A1FCB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90BB9E1-F0BE-4272-B0B1-599845A1FCB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
